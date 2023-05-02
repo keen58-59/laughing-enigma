@@ -1,0 +1,180 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 3px solid #f39c12;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.banner {
+    background-image: url("https://i.radikal.host/2105/9cf5f74c82f26bf8d1eb2f2a778c9056.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.banner:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.featured {
+    margin-top: 50px;
+}
+
+.featured h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0 20px 20px 20px;
+}
+
+.card button {
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:bold;
+    margin: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .card button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
